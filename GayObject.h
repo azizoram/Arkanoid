@@ -7,17 +7,20 @@
 
 #include "Point.h"
 #include "Section.h"
-
+#include "ViewField.h"
 class GayObject{
 public:
-    Point point;
-    GayObject(double x,double y):point(x,y){}
+    GayObject *prev=this;
+    GayObject(){}
     virtual ~GayObject(){ }
-    virtual Point intersection(Section &s){return NoPoint();}
+    virtual std::pair<Point,double> intersection(Section &s){return {NoPoint(),0};}
     virtual void Update(){}
-    virtual Point nextPos(){return point;}
-    virtual void Collide(GayObject& gay){}
+    virtual Point nextPos() {return NoPoint(); }
+    virtual Point curPos() {return NoPoint(); }
+    virtual void setPos(Point p) { }
+    virtual void setAng(double a) { }
+    virtual void Collide(GayObject* gay){}
     virtual char getChar(){return ' ';}
-    void setPoint(Point p){point=p;}
+    virtual void show(ViewField &field){}
 };
 #endif //SEMWORK_GAYOBJECT_H

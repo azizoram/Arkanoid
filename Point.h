@@ -7,19 +7,19 @@
 
 
 #include <cmath>
-
+#include "Rational.h"
 struct Point {
-    Point(double x,double y):x(x),y(y){}
+    Point(Rational x,Rational y):x(x),y(y){}
     Point(int x,int y):x(x),y(y){}
-    double x;
-    double y;
-    bool isNop(){return std::isnan(x)||std::isnan(y);}
-    double distance(Point &p){
+    Rational x;
+    Rational y;
+    bool isNop(){return x.isnan()||y.isnan();}
+    Rational distance(Point &p){
         if (isNop()||p.isNop())
             return std::nan("");
-        double dx=p.x-x;
-        double dy=p.y-y;
-        return std::sqrt(dx*dx+dy*dy);
+        Rational dx=p.x-x;
+        Rational dy=p.y-y;
+        return (dx*dx+dy*dy).sqrt();
     }
 };
 

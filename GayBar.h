@@ -9,7 +9,7 @@
 
 class GayBar: public GayObject{
 public:
-    GayBar(double x,double y): GayObject(x,y){}
+    GayBar(double x,double y): GayObject(){}
     char getChar() override{
         return '=';
     }

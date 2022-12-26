@@ -93,13 +93,13 @@
 		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Ball.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Block.cpp">
-			<Option target="semwork"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Block.h">
-			<Option target="semwork"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Brick.h">
+			<Option target="semwork"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Fourangle.cpp">
+			<Option target="semwork"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Fourangle.h">
 			<Option target="semwork"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/GayBar.h">
@@ -117,7 +117,19 @@
 		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Point.h">
 			<Option target="semwork"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Rational.cpp">
+			<Option target="semwork"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Rational.h">
+			<Option target="semwork"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Section.h">
+			<Option target="semwork"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/ViewField.cpp">
+			<Option target="semwork"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/ViewField.h">
 			<Option target="semwork"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Wall.h">

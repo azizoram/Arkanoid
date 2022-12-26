@@ -150,32 +150,32 @@ Ball.cpp.s:
 	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Ball.cpp.s
 .PHONY : Ball.cpp.s
 
-Block.o: Block.cpp.o
+Fourangle.o: Fourangle.cpp.o
 
-.PHONY : Block.o
+.PHONY : Fourangle.o
 
 # target to build an object file
-Block.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Block.cpp.o
-.PHONY : Block.cpp.o
+Fourangle.cpp.o:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Fourangle.cpp.o
+.PHONY : Fourangle.cpp.o
 
-Block.i: Block.cpp.i
+Fourangle.i: Fourangle.cpp.i
 
-.PHONY : Block.i
+.PHONY : Fourangle.i
 
 # target to preprocess a source file
-Block.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Block.cpp.i
-.PHONY : Block.cpp.i
+Fourangle.cpp.i:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Fourangle.cpp.i
+.PHONY : Fourangle.cpp.i
 
-Block.s: Block.cpp.s
+Fourangle.s: Fourangle.cpp.s
 
-.PHONY : Block.s
+.PHONY : Fourangle.s
 
 # target to generate assembly for a file
-Block.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Block.cpp.s
-.PHONY : Block.cpp.s
+Fourangle.cpp.s:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Fourangle.cpp.s
+.PHONY : Fourangle.cpp.s
 
 GayObject.o: GayObject.cpp.o
 
@@ -231,6 +231,60 @@ Point.cpp.s:
 	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Point.cpp.s
 .PHONY : Point.cpp.s
 
+Rational.o: Rational.cpp.o
+
+.PHONY : Rational.o
+
+# target to build an object file
+Rational.cpp.o:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.o
+.PHONY : Rational.cpp.o
+
+Rational.i: Rational.cpp.i
+
+.PHONY : Rational.i
+
+# target to preprocess a source file
+Rational.cpp.i:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.i
+.PHONY : Rational.cpp.i
+
+Rational.s: Rational.cpp.s
+
+.PHONY : Rational.s
+
+# target to generate assembly for a file
+Rational.cpp.s:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.s
+.PHONY : Rational.cpp.s
+
+ViewField.o: ViewField.cpp.o
+
+.PHONY : ViewField.o
+
+# target to build an object file
+ViewField.cpp.o:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ViewField.cpp.o
+.PHONY : ViewField.cpp.o
+
+ViewField.i: ViewField.cpp.i
+
+.PHONY : ViewField.i
+
+# target to preprocess a source file
+ViewField.cpp.i:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ViewField.cpp.i
+.PHONY : ViewField.cpp.i
+
+ViewField.s: ViewField.cpp.s
+
+.PHONY : ViewField.s
+
+# target to generate assembly for a file
+ViewField.cpp.s:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ViewField.cpp.s
+.PHONY : ViewField.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -270,15 +324,21 @@ help:
 	@echo "... Ball.o"
 	@echo "... Ball.i"
 	@echo "... Ball.s"
-	@echo "... Block.o"
-	@echo "... Block.i"
-	@echo "... Block.s"
+	@echo "... Fourangle.o"
+	@echo "... Fourangle.i"
+	@echo "... Fourangle.s"
 	@echo "... GayObject.o"
 	@echo "... GayObject.i"
 	@echo "... GayObject.s"
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"
+	@echo "... Rational.o"
+	@echo "... Rational.i"
+	@echo "... Rational.s"
+	@echo "... ViewField.o"
+	@echo "... ViewField.i"
+	@echo "... ViewField.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

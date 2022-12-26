@@ -6,15 +6,25 @@
 
 Point Ball::nextPos(){
     double angle= a*PI/180;
-    return {point.x+(sin(angle) * s),point.y+(cos(angle) * s)};
+    return {point.x+Rational(sin(angle) * s),point.y+Rational(cos(angle) * s)};
+}
+Point Ball::curPos(){
+    return point;
+}
+void Ball::Collide(GayObject *gay) {
+    if(gay !=prev) {
+        prev=gay;/*
+        double t;
+        double dx = std::modf(point.x, &t);
+        double dy = std::modf(point.y, &t);
+        if (dx >= dy) {
+            a = 180 - a;
+        } else {
+            a = 360 - a;
+        }*/
+    }
 }
 
-double norm(double a){
-    if(a<0)
-        return norm(a+360);
-    return std::fmod(a,360);
-}
-
-void Ball::Collide(GayObject &gay) {
-
+void Ball::setPos(Point p) {
+    point=p;
 }
