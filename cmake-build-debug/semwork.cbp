@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="semwork">
-				<Option output="/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/semwork" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/semwork" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 semwork"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 semwork"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="semwork/fast">
-				<Option output="/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/semwork" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/semwork" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -77,68 +77,62 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 semwork/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 semwork/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Arkanoid.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Arkanoid.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Ball.cpp">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Ball.cpp">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Ball.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Ball.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Brick.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Brick.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Fourangle.cpp">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Fourangle.cpp">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Fourangle.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Fourangle.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/GayBar.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/GayBar.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/GayObject.cpp">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/GayObject.cpp">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/GayObject.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/GayObject.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Point.cpp">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Point.cpp">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Point.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Point.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Rational.cpp">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Section.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Rational.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/ViewField.cpp">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Section.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/ViewField.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/ViewField.cpp">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/Wall.h">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/ViewField.h">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/main.cpp">
 			<Option target="semwork"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/Wall.h">
-			<Option target="semwork"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/main.cpp">
-			<Option target="semwork"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/ramir/studium/PCC/arkanoid/CMakeLists.txt">
+		<Unit filename="/mnt/c/Users/ramir/CLionProjects/arkanoid2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

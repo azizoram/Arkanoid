@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/semwork.dir/Fourangle.cpp.o"
   "CMakeFiles/semwork.dir/GayObject.cpp.o"
   "CMakeFiles/semwork.dir/Point.cpp.o"
-  "CMakeFiles/semwork.dir/Rational.cpp.o"
   "CMakeFiles/semwork.dir/ViewField.cpp.o"
   "CMakeFiles/semwork.dir/main.cpp.o"
   "semwork"

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/ramir/studium/PCC/arkanoid
+CMAKE_SOURCE_DIR = /mnt/c/Users/ramir/CLionProjects/arkanoid2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/CMakeFiles /mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/CLionProjects/arkanoid2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,33 +231,6 @@ Point.cpp.s:
 	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Point.cpp.s
 .PHONY : Point.cpp.s
 
-Rational.o: Rational.cpp.o
-
-.PHONY : Rational.o
-
-# target to build an object file
-Rational.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.o
-.PHONY : Rational.cpp.o
-
-Rational.i: Rational.cpp.i
-
-.PHONY : Rational.i
-
-# target to preprocess a source file
-Rational.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.i
-.PHONY : Rational.cpp.i
-
-Rational.s: Rational.cpp.s
-
-.PHONY : Rational.s
-
-# target to generate assembly for a file
-Rational.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.s
-.PHONY : Rational.cpp.s
-
 ViewField.o: ViewField.cpp.o
 
 .PHONY : ViewField.o
@@ -333,9 +306,6 @@ help:
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"
-	@echo "... Rational.o"
-	@echo "... Rational.i"
-	@echo "... Rational.s"
 	@echo "... ViewField.o"
 	@echo "... ViewField.i"
 	@echo "... ViewField.s"

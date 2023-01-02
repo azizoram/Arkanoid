@@ -4,16 +4,20 @@
 
 #ifndef SEMWORK_FOURANGLE_H
 #define SEMWORK_FOURANGLE_H
+
+#include <limits>
 #include "Section.h"
 #include "GayObject.h"
 class Fourangle: public GayObject {
+
+protected:
     Section s1,s2,s3,s4;
 public:
-    Fourangle(Rational x1, Rational y1,Rational x2,Rational y2):
+    Fourangle(double x1, double y1,double x2,double y2):
     s1({x1, y1}, {x2, y1}),
-    s2({x1, y1}, {x1, y2}),
-    s3({x2, y1}, {x2, y2}),
-    s4({x2, y2}, {x1, y2}){}
+    s2({x2, y1}, {x2, y2}),
+    s3({x2, y2}, {x1, y2}),
+    s4({x1, y2}, {x1, y1}){}
     std::pair<Point,double> intersection(Section &s) {
         double min = std::numeric_limits<double>::max();
         std::pair<Point,double> r= {NoPoint(),0};

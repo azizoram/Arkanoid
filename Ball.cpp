@@ -6,7 +6,7 @@
 
 Point Ball::nextPos(){
     double angle= a*PI/180;
-    return {point.x+Rational(sin(angle) * s),point.y+Rational(cos(angle) * s)};
+    return {point.x+(sin(angle) * s),point.y+(cos(angle) * s)};
 }
 Point Ball::curPos(){
     return point;

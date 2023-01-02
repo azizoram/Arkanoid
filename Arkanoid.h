@@ -23,19 +23,17 @@ class Arkanoid{
     std::vector<GayObject *> objects;
     int h,w;
     GayBar *bar;
+    Ball *ball= nullptr;
     bool working=true;
 public:
-    Arkanoid(int h,int w,double ang):h(h),w(w){
-        objects.push_back(new Ball(w/2,h/2,ang,0.6));
-        objects.push_back(new Wall(0,0,w-2,0));
-        objects.push_back(new Wall(0,0,0,h-2));
-        objects.push_back(new Wall(w-2,0,w-2,h-2));
-        objects.push_back(new Wall(0,h-2,w-2,h-2));
-        std::uniform_real_distribution<double> unif(0,360);
-        std::default_random_engine re;
-        double a = std::fmod(time(nullptr),360);
-        //bar=new GayBar(w/2,h-1);
-        //objects.push_back(bar);
+    Arkanoid(int h,int w):h(h),w(w){
+        //objects.push_back(new Ball(w/2,h/2,ang,0.6));
+        objects.push_back(new Wall(0,0,w-1,0));
+        objects.push_back(new Wall(0,0,0,h-1));
+        objects.push_back(new Wall(w-1,0,w-1,h-1));
+      //  objects.push_back(new Wall(0,h-1,w-1,h-1));
+        bar=new GayBar(w/2,h-1,3.5);
+        objects.push_back(bar);
     }
     ~Arkanoid(){
         for(auto o:objects)
@@ -86,11 +84,11 @@ public:
             }
             std::this_thread::sleep_for(std::chrono::milliseconds(80));
 
-            //printf("\x1B[2J\x1B[H\n");
-            for (int i = 0; i < h; ++i)
-                printf("\033[1A\r");
+            printf("\x1B[2J\x1B[H\n\r");
+            //for (int i = 0; i < h+2; ++i)
+            //    printf("\033[1A\r");
         }
-        printf("\x1B[2J\x1B[H\n");
+        printf("\x1B[2J\x1B[H\n\r");
     }
     void control(){
         termios oldt;
@@ -107,14 +105,29 @@ public:
                     stop();
                     break;
                 case 'a':
-                    //x = bar->getX();
-                    //if (x - 1 > 0)
-                        //bar->setX(x - 1);
+                    x = bar->p.x;
+                    if (x - 1 > 0)
+                        bar->move(-1);
+                    else
+                        bar->move(x-1);
                     break;
                 case 'd':
-                    //x = bar->getX();
-                    //if (x+2 < w)
-                        //bar->setX(x + 1);
+                    x = bar->p.x;
+                    if (x+bar->w+1 < w)
+                        bar->move(1);
+                    else
+                        bar->move((w-bar->w-1)-x);
+                    break;
+                case ' ':
+                    if(!ball){
+
+                        std::random_device rd;
+                        std::default_random_engine eng(rd());
+                        std::uniform_real_distribution<double> distr(100, 260);
+
+                        ball=new Ball(bar->p.x+(bar->w*0.5), bar->p.y-1, distr(eng), 0.4);
+                        objects.push_back(ball);
+                    }
                     break;
             }
         }
