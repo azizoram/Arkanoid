@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/ramir/studium/PCC/arkanoid
+CMAKE_SOURCE_DIR = /mnt/c/Users/ramir/studium/arkanoid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,60 @@ Ball.cpp.s:
 	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Ball.cpp.s
 .PHONY : Ball.cpp.s
 
+Bottom.o: Bottom.cpp.o
+
+.PHONY : Bottom.o
+
+# target to build an object file
+Bottom.cpp.o:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Bottom.cpp.o
+.PHONY : Bottom.cpp.o
+
+Bottom.i: Bottom.cpp.i
+
+.PHONY : Bottom.i
+
+# target to preprocess a source file
+Bottom.cpp.i:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Bottom.cpp.i
+.PHONY : Bottom.cpp.i
+
+Bottom.s: Bottom.cpp.s
+
+.PHONY : Bottom.s
+
+# target to generate assembly for a file
+Bottom.cpp.s:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Bottom.cpp.s
+.PHONY : Bottom.cpp.s
+
+Figure.o: Figure.cpp.o
+
+.PHONY : Figure.o
+
+# target to build an object file
+Figure.cpp.o:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Figure.cpp.o
+.PHONY : Figure.cpp.o
+
+Figure.i: Figure.cpp.i
+
+.PHONY : Figure.i
+
+# target to preprocess a source file
+Figure.cpp.i:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Figure.cpp.i
+.PHONY : Figure.cpp.i
+
+Figure.s: Figure.cpp.s
+
+.PHONY : Figure.s
+
+# target to generate assembly for a file
+Figure.cpp.s:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Figure.cpp.s
+.PHONY : Figure.cpp.s
+
 Fourangle.o: Fourangle.cpp.o
 
 .PHONY : Fourangle.o
@@ -177,32 +231,32 @@ Fourangle.cpp.s:
 	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Fourangle.cpp.s
 .PHONY : Fourangle.cpp.s
 
-GayObject.o: GayObject.cpp.o
+GameObject.o: GameObject.cpp.o
 
-.PHONY : GayObject.o
+.PHONY : GameObject.o
 
 # target to build an object file
-GayObject.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GayObject.cpp.o
-.PHONY : GayObject.cpp.o
+GameObject.cpp.o:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GameObject.cpp.o
+.PHONY : GameObject.cpp.o
 
-GayObject.i: GayObject.cpp.i
+GameObject.i: GameObject.cpp.i
 
-.PHONY : GayObject.i
+.PHONY : GameObject.i
 
 # target to preprocess a source file
-GayObject.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GayObject.cpp.i
-.PHONY : GayObject.cpp.i
+GameObject.cpp.i:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GameObject.cpp.i
+.PHONY : GameObject.cpp.i
 
-GayObject.s: GayObject.cpp.s
+GameObject.s: GameObject.cpp.s
 
-.PHONY : GayObject.s
+.PHONY : GameObject.s
 
 # target to generate assembly for a file
-GayObject.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GayObject.cpp.s
-.PHONY : GayObject.cpp.s
+GameObject.cpp.s:
+	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GameObject.cpp.s
+.PHONY : GameObject.cpp.s
 
 Point.o: Point.cpp.o
 
@@ -230,33 +284,6 @@ Point.s: Point.cpp.s
 Point.cpp.s:
 	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Point.cpp.s
 .PHONY : Point.cpp.s
-
-Rational.o: Rational.cpp.o
-
-.PHONY : Rational.o
-
-# target to build an object file
-Rational.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.o
-.PHONY : Rational.cpp.o
-
-Rational.i: Rational.cpp.i
-
-.PHONY : Rational.i
-
-# target to preprocess a source file
-Rational.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.i
-.PHONY : Rational.cpp.i
-
-Rational.s: Rational.cpp.s
-
-.PHONY : Rational.s
-
-# target to generate assembly for a file
-Rational.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rational.cpp.s
-.PHONY : Rational.cpp.s
 
 ViewField.o: ViewField.cpp.o
 
@@ -324,18 +351,21 @@ help:
 	@echo "... Ball.o"
 	@echo "... Ball.i"
 	@echo "... Ball.s"
+	@echo "... Bottom.o"
+	@echo "... Bottom.i"
+	@echo "... Bottom.s"
+	@echo "... Figure.o"
+	@echo "... Figure.i"
+	@echo "... Figure.s"
 	@echo "... Fourangle.o"
 	@echo "... Fourangle.i"
 	@echo "... Fourangle.s"
-	@echo "... GayObject.o"
-	@echo "... GayObject.i"
-	@echo "... GayObject.s"
+	@echo "... GameObject.o"
+	@echo "... GameObject.i"
+	@echo "... GameObject.s"
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"
-	@echo "... Rational.o"
-	@echo "... Rational.i"
-	@echo "... Rational.s"
 	@echo "... ViewField.o"
 	@echo "... ViewField.i"
 	@echo "... ViewField.s"

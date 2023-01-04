@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/ramir/studium/PCC/arkanoid
+CMAKE_SOURCE_DIR = /mnt/c/Users/ramir/studium/arkanoid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/semwork.dir/depend.make
@@ -59,118 +59,133 @@ include CMakeFiles/semwork.dir/flags.make
 
 CMakeFiles/semwork.dir/main.cpp.o: CMakeFiles/semwork.dir/flags.make
 CMakeFiles/semwork.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/semwork.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/main.cpp.o -c /mnt/c/Users/ramir/studium/PCC/arkanoid/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/semwork.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/main.cpp.o -c /mnt/c/Users/ramir/studium/arkanoid/main.cpp
 
 CMakeFiles/semwork.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/PCC/arkanoid/main.cpp > CMakeFiles/semwork.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/arkanoid/main.cpp > CMakeFiles/semwork.dir/main.cpp.i
 
 CMakeFiles/semwork.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/PCC/arkanoid/main.cpp -o CMakeFiles/semwork.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/arkanoid/main.cpp -o CMakeFiles/semwork.dir/main.cpp.s
 
 CMakeFiles/semwork.dir/Ball.cpp.o: CMakeFiles/semwork.dir/flags.make
 CMakeFiles/semwork.dir/Ball.cpp.o: ../Ball.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/semwork.dir/Ball.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Ball.cpp.o -c /mnt/c/Users/ramir/studium/PCC/arkanoid/Ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/semwork.dir/Ball.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Ball.cpp.o -c /mnt/c/Users/ramir/studium/arkanoid/Ball.cpp
 
 CMakeFiles/semwork.dir/Ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/Ball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/PCC/arkanoid/Ball.cpp > CMakeFiles/semwork.dir/Ball.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/arkanoid/Ball.cpp > CMakeFiles/semwork.dir/Ball.cpp.i
 
 CMakeFiles/semwork.dir/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/Ball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/PCC/arkanoid/Ball.cpp -o CMakeFiles/semwork.dir/Ball.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/arkanoid/Ball.cpp -o CMakeFiles/semwork.dir/Ball.cpp.s
 
-CMakeFiles/semwork.dir/GayObject.cpp.o: CMakeFiles/semwork.dir/flags.make
-CMakeFiles/semwork.dir/GayObject.cpp.o: ../GayObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/semwork.dir/GayObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/GayObject.cpp.o -c /mnt/c/Users/ramir/studium/PCC/arkanoid/GayObject.cpp
+CMakeFiles/semwork.dir/GameObject.cpp.o: CMakeFiles/semwork.dir/flags.make
+CMakeFiles/semwork.dir/GameObject.cpp.o: ../GameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/semwork.dir/GameObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/GameObject.cpp.o -c /mnt/c/Users/ramir/studium/arkanoid/GameObject.cpp
 
-CMakeFiles/semwork.dir/GayObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/GayObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/PCC/arkanoid/GayObject.cpp > CMakeFiles/semwork.dir/GayObject.cpp.i
+CMakeFiles/semwork.dir/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/GameObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/arkanoid/GameObject.cpp > CMakeFiles/semwork.dir/GameObject.cpp.i
 
-CMakeFiles/semwork.dir/GayObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/GayObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/PCC/arkanoid/GayObject.cpp -o CMakeFiles/semwork.dir/GayObject.cpp.s
+CMakeFiles/semwork.dir/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/GameObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/arkanoid/GameObject.cpp -o CMakeFiles/semwork.dir/GameObject.cpp.s
 
 CMakeFiles/semwork.dir/Point.cpp.o: CMakeFiles/semwork.dir/flags.make
 CMakeFiles/semwork.dir/Point.cpp.o: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/semwork.dir/Point.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Point.cpp.o -c /mnt/c/Users/ramir/studium/PCC/arkanoid/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/semwork.dir/Point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Point.cpp.o -c /mnt/c/Users/ramir/studium/arkanoid/Point.cpp
 
 CMakeFiles/semwork.dir/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/PCC/arkanoid/Point.cpp > CMakeFiles/semwork.dir/Point.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/arkanoid/Point.cpp > CMakeFiles/semwork.dir/Point.cpp.i
 
 CMakeFiles/semwork.dir/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/PCC/arkanoid/Point.cpp -o CMakeFiles/semwork.dir/Point.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/arkanoid/Point.cpp -o CMakeFiles/semwork.dir/Point.cpp.s
 
 CMakeFiles/semwork.dir/Fourangle.cpp.o: CMakeFiles/semwork.dir/flags.make
 CMakeFiles/semwork.dir/Fourangle.cpp.o: ../Fourangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/semwork.dir/Fourangle.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Fourangle.cpp.o -c /mnt/c/Users/ramir/studium/PCC/arkanoid/Fourangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/semwork.dir/Fourangle.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Fourangle.cpp.o -c /mnt/c/Users/ramir/studium/arkanoid/Fourangle.cpp
 
 CMakeFiles/semwork.dir/Fourangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/Fourangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/PCC/arkanoid/Fourangle.cpp > CMakeFiles/semwork.dir/Fourangle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/arkanoid/Fourangle.cpp > CMakeFiles/semwork.dir/Fourangle.cpp.i
 
 CMakeFiles/semwork.dir/Fourangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/Fourangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/PCC/arkanoid/Fourangle.cpp -o CMakeFiles/semwork.dir/Fourangle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/arkanoid/Fourangle.cpp -o CMakeFiles/semwork.dir/Fourangle.cpp.s
 
 CMakeFiles/semwork.dir/ViewField.cpp.o: CMakeFiles/semwork.dir/flags.make
 CMakeFiles/semwork.dir/ViewField.cpp.o: ../ViewField.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/semwork.dir/ViewField.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/ViewField.cpp.o -c /mnt/c/Users/ramir/studium/PCC/arkanoid/ViewField.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/semwork.dir/ViewField.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/ViewField.cpp.o -c /mnt/c/Users/ramir/studium/arkanoid/ViewField.cpp
 
 CMakeFiles/semwork.dir/ViewField.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/ViewField.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/PCC/arkanoid/ViewField.cpp > CMakeFiles/semwork.dir/ViewField.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/arkanoid/ViewField.cpp > CMakeFiles/semwork.dir/ViewField.cpp.i
 
 CMakeFiles/semwork.dir/ViewField.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/ViewField.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/PCC/arkanoid/ViewField.cpp -o CMakeFiles/semwork.dir/ViewField.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/arkanoid/ViewField.cpp -o CMakeFiles/semwork.dir/ViewField.cpp.s
 
-CMakeFiles/semwork.dir/Rational.cpp.o: CMakeFiles/semwork.dir/flags.make
-CMakeFiles/semwork.dir/Rational.cpp.o: ../Rational.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/semwork.dir/Rational.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Rational.cpp.o -c /mnt/c/Users/ramir/studium/PCC/arkanoid/Rational.cpp
+CMakeFiles/semwork.dir/Figure.cpp.o: CMakeFiles/semwork.dir/flags.make
+CMakeFiles/semwork.dir/Figure.cpp.o: ../Figure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/semwork.dir/Figure.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Figure.cpp.o -c /mnt/c/Users/ramir/studium/arkanoid/Figure.cpp
 
-CMakeFiles/semwork.dir/Rational.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/Rational.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/PCC/arkanoid/Rational.cpp > CMakeFiles/semwork.dir/Rational.cpp.i
+CMakeFiles/semwork.dir/Figure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/Figure.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/arkanoid/Figure.cpp > CMakeFiles/semwork.dir/Figure.cpp.i
 
-CMakeFiles/semwork.dir/Rational.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/Rational.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/PCC/arkanoid/Rational.cpp -o CMakeFiles/semwork.dir/Rational.cpp.s
+CMakeFiles/semwork.dir/Figure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/Figure.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/arkanoid/Figure.cpp -o CMakeFiles/semwork.dir/Figure.cpp.s
+
+CMakeFiles/semwork.dir/Bottom.cpp.o: CMakeFiles/semwork.dir/flags.make
+CMakeFiles/semwork.dir/Bottom.cpp.o: ../Bottom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/semwork.dir/Bottom.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semwork.dir/Bottom.cpp.o -c /mnt/c/Users/ramir/studium/arkanoid/Bottom.cpp
+
+CMakeFiles/semwork.dir/Bottom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semwork.dir/Bottom.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ramir/studium/arkanoid/Bottom.cpp > CMakeFiles/semwork.dir/Bottom.cpp.i
+
+CMakeFiles/semwork.dir/Bottom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semwork.dir/Bottom.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ramir/studium/arkanoid/Bottom.cpp -o CMakeFiles/semwork.dir/Bottom.cpp.s
 
 # Object files for target semwork
 semwork_OBJECTS = \
 "CMakeFiles/semwork.dir/main.cpp.o" \
 "CMakeFiles/semwork.dir/Ball.cpp.o" \
-"CMakeFiles/semwork.dir/GayObject.cpp.o" \
+"CMakeFiles/semwork.dir/GameObject.cpp.o" \
 "CMakeFiles/semwork.dir/Point.cpp.o" \
 "CMakeFiles/semwork.dir/Fourangle.cpp.o" \
 "CMakeFiles/semwork.dir/ViewField.cpp.o" \
-"CMakeFiles/semwork.dir/Rational.cpp.o"
+"CMakeFiles/semwork.dir/Figure.cpp.o" \
+"CMakeFiles/semwork.dir/Bottom.cpp.o"
 
 # External object files for target semwork
 semwork_EXTERNAL_OBJECTS =
 
 semwork: CMakeFiles/semwork.dir/main.cpp.o
 semwork: CMakeFiles/semwork.dir/Ball.cpp.o
-semwork: CMakeFiles/semwork.dir/GayObject.cpp.o
+semwork: CMakeFiles/semwork.dir/GameObject.cpp.o
 semwork: CMakeFiles/semwork.dir/Point.cpp.o
 semwork: CMakeFiles/semwork.dir/Fourangle.cpp.o
 semwork: CMakeFiles/semwork.dir/ViewField.cpp.o
-semwork: CMakeFiles/semwork.dir/Rational.cpp.o
+semwork: CMakeFiles/semwork.dir/Figure.cpp.o
+semwork: CMakeFiles/semwork.dir/Bottom.cpp.o
 semwork: CMakeFiles/semwork.dir/build.make
 semwork: CMakeFiles/semwork.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable semwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable semwork"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/semwork.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +198,6 @@ CMakeFiles/semwork.dir/clean:
 .PHONY : CMakeFiles/semwork.dir/clean
 
 CMakeFiles/semwork.dir/depend:
-	cd /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/ramir/studium/PCC/arkanoid /mnt/c/Users/ramir/studium/PCC/arkanoid /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/ramir/studium/arkanoid /mnt/c/Users/ramir/studium/arkanoid /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/semwork.dir/depend
 

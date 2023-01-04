@@ -10,8 +10,7 @@ void set_raw(bool set) {
 }
 int main(int argc, char *argv[]) {
     set_raw(true);
-   // double d=atof(argv[1]);
-    auto ark=Arkanoid(25,25,90);
+    auto ark=Arkanoid(25,25,5);
     printf("\n\r");
     auto inputThread = [](Arkanoid& a) {
         std::cout << "\rStart input thread\n";

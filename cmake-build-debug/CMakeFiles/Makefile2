@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/ramir/studium/PCC/arkanoid
+CMAKE_SOURCE_DIR = /mnt/c/Users/ramir/studium/arkanoid
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/semwork.dir/clean
 CMakeFiles/semwork.dir/all:
 	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/depend
 	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target semwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target semwork"
 .PHONY : CMakeFiles/semwork.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/semwork.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/semwork.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/PCC/arkanoid/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/semwork.dir/rule
 
 # Convenience name for target.

@@ -10,21 +10,17 @@ class Brick: public Fourangle{
     unsigned int x,y,h;//health
 public:
     Brick(double x,double y,int h):x(x),y(y), Fourangle(x, y,x+1,y+1), h(h){}
-    void Collide(GayObject *obj) override {h--;};
+    void Collide(GameObject *obj) override {h--;if(h < 0)h=0;};
 
-    char getChar() override{
-        return '0'+h;
-    }
-
-    Point intersection(Section &s) {
-        if(h<=0)
-            return NoPoint();
-        else
+    virtual std::pair<Point,double> intersection(Section &s){
+        if(h>0)
             return Fourangle::intersection(s);
+        return {NoPoint(),0};
     }
     void show(ViewField &f) override{
         if(h>0)
             f.Set(int(x),int(y),'0'+h);
+
     }
 };
 #endif //SEMWORK_BRICK_H

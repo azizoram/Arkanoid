@@ -7,20 +7,33 @@
 
 
 #include <cmath>
-#include "Rational.h"
-struct Point {
-    Point(Rational x,Rational y):x(x),y(y){}
+#include "GameObject.h"
+
+struct Point: public GameObject {
+    Point(double x,double y):x(x),y(y){}
     Point(int x,int y):x(x),y(y){}
-    Rational x;
-    Rational y;
-    bool isNop(){return x.isnan()||y.isnan();}
-    Rational distance(Point &p){
+    double x;
+    double y;
+    bool isNop(){return std::isnan(x)||std::isnan(y);}
+    double distance(Point &p){
         if (isNop()||p.isNop())
             return std::nan("");
-        Rational dx=p.x-x;
-        Rational dy=p.y-y;
-        return (dx*dx+dy*dy).sqrt();
+        double dx=p.x-x;
+        double dy=p.y-y;
+        return sqrt(dx*dx+dy*dy);
     }
+
+    virtual std::pair<Point,double> intersection(Section &s);
+    virtual void Update(){};
+    virtual Point nextPos(){return curPos();}
+    virtual Point curPos(){return *this;}
+    virtual void setPos(const Point& p){
+        x=p.x;
+        y=p.y;
+    }
+    virtual void setAng(double a){}
+    virtual void Collide(GameObject* gameObject){}
+    virtual void show(ViewField &field){}
 };
 
 struct NoPoint: public Point{

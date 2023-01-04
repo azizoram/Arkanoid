@@ -5,26 +5,20 @@
 #include "Ball.h"
 
 Point Ball::nextPos(){
-    double angle= a*PI/180;
-    return {point.x+Rational(sin(angle) * s),point.y+Rational(cos(angle) * s)};
-}
-Point Ball::curPos(){
-    return point;
-}
-void Ball::Collide(GayObject *gay) {
-    if(gay !=prev) {
-        prev=gay;/*
-        double t;
-        double dx = std::modf(point.x, &t);
-        double dy = std::modf(point.y, &t);
-        if (dx >= dy) {
-            a = 180 - a;
-        } else {
-            a = 360 - a;
-        }*/
+    if(!dead) {
+        double angle = a * PI / 180;
+        return {x + (sin(angle) * s), y + (cos(angle) * s)};
     }
+    return NoPoint();
 }
+void Ball::Collide(GameObject *gameObject) {
+    prev=gameObject;
+    if(gameObject->deadly()) {
+        dead = true;
+        x = NoPoint().x;
+        y = NoPoint().y;
+        a = 0;
+        s = 0;
+    }
 
-void Ball::setPos(Point p) {
-    point=p;
 }
