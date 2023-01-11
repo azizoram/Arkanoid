@@ -5,30 +5,32 @@
 #ifndef SEMWORK_BALL_H
 #define SEMWORK_BALL_H
 
-#include "GayObject.h"
+#include "Point.h"
+#include "Interactive.h"
+#include "Section.h"
 #include <math.h>
 
 #define PI 3.14159265
 
-class Ball: public GayObject{
+class Ball: public Point{
     double a,s;//x, y , angle, speed
-    Point point;
-
+    bool dead=false;
+    void die(){
+        a=s=0;
+        dead= true;
+    }
 public:
-    Ball(double x,double y,double a,double s): point(x,y), a(a), s(s){}
-    //void Update() override;
-    void Collide(GayObject *gay) override ;
-    char getChar() override{
-        return '*';
+    Ball(double x,double y,double a,double s): Point(x,y), a(a), s(s){}
+    void Update(GameObject *map) override;
+    void Collide(GameObject *gay) override ;
+    Point nextPos() override;;
+    void show(ViewField &f) override{
+        if(!dead)f.Set(int(x),int(y),'*');
     }
 
-    Point nextPos() override;
-    Point curPos() override;
-    void setPos(Point p) override;
-    void setAng(double ang) override{a=ang;};
-    void show(ViewField &f) override{
-        f.Set(int(point.x),int(point.y),'*');
-    }
+    virtual Point curPos(){return {x,y};}
+
+
 };
 
 

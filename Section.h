@@ -6,83 +6,101 @@
 #define SEMWORK_SECTION_H
 
 #include <algorithm>
+#include <vector>
+#include "GameObject.h"
 #include "Point.h"
 #include <stdio.h>
+#include <cfloat>
 #define PI 3.14159265
 #define EPS 0.000000001
-#include "Rational.h"
-class Section{
+inline double area (Point a, Point b, Point c) {
+    return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+}
+
+inline bool intersect_1 (double a, double b, double c, double d) {
+    if (a > b)  std::swap (a, b);
+    if (c > d)  std::swap (c, d);
+    return std::max(a,c) <= std::min(b,d);
+}
+
+class Section: public GameObject{
+public:
     double norm(double a){
         if(a<0)
             return norm(a+360);
         return std::fmod(a,360);
     }
-public:
     Point p,q;
     Section(Point p1,Point p2):p(p1),q(p2){}
-    std::pair<Point,double> intersection(Section &s){
 
+    bool intersects(const Section& s) override{
+        Point a=p;
+        Point b=q;
+        Point c=s.p;
+        Point d=s.q;
+        if( intersect_1 (a.x, b.x, c.x, d.x)
+               && intersect_1 (a.y, b.y, c.y, d.y)
+               && ((std::signbit(area(a,b,c)) ? -1: 1) * (std::signbit(area(a,b,d)) ? -1: 1) < 0 ||
+                   std::abs(area(a,b,c) * area(a,b,d))<=DBL_EPSILON)
+               && ((std::signbit(area(c,d,a)) ? -1: 1) * (std::signbit(area(c,d,b))? -1: 1) < 0||
+                   std::abs(area(c,d,a) * area(c,d,b))<=DBL_EPSILON))
+            return true;
+        return false;
+    }
 
-        Rational dx1=p.x-q.x;
-        Rational dx2=s.p.x-s.q.x;
-        if(dx1==0){
-            Rational dx2=s.p.x-s.q.x;
-            Rational dy2=s.p.y-s.q.y;
-            Rational a2=dy2/dx2;
-            Rational b2=s.p.y-(a2*s.p.x);
-            Rational y2=a2*s.p.x+b2;
-            double ang1=0;
-            double ang2=atan(dx2/dy2)*180/PI;
-            if(y2>=std::min(p.y,q.y)&&y2<=std::max(p.y,q.y)&&
-                    y2>=std::min(s.p.y,s.q.y)&&y2<=std::max(s.p.y,s.q.y)&&
-                    p.x>=std::min(s.p.x,s.q.x)&&p.x<=std::max(s.p.x,s.q.x))
-                return {{p.x, y2},norm(2*ang2-ang1)};
-            else
-                return {NoPoint(),0};
-        }
-        if(dx2==0){
-            Rational dx1=p.x-q.x;
-            Rational dy1=p.y-q.y;
-            Rational a1=dy1/dx1;
-            Rational b1=p.y-(a1*p.x);
-            Rational y1=a1*p.x+b1;
-            double ang1=atan(dx1/dy1)*180/PI;
-            double ca=cos(ang1*PI/180);
-            double sa=sin(ang1*PI/180);
-            ang1=norm(ang1+180);
-            if(ca*dy1<0)
-                ang1=norm(ang1+180);
-            double ang2=0;
-            if(y1>=std::min(s.p.y,s.q.y)&&y1<=std::max(s.p.y,s.q.y)&&
-                    y1>=std::min(p.y,q.y)&&y1<=std::max(p.y,q.y)&&
-                    s.p.x>=std::min(p.x,q.x)&&s.p.x<=std::max(p.x,q.x))
-                return {{s.p.x, y1},norm(2*ang2-ang1)};
-            else
-                return {NoPoint(),0};
-        }
-        Rational dy1=p.y-q.y;
-        Rational a1=dy1/dx1;
-        Rational b1=p.y-(a1*p.x);
-        Rational dy2=s.p.y-s.q.y;
-        Rational a2=dy2/dx2;
-        Rational b2=s.p.y-(a2*s.p.x);
-        Rational ix=(b1-b2)/(a2-a1);
-        Rational iy=a1*ix+b1;
-        double ang1=atan(dx1/dy1)*180/PI;
-        double ca=cos(ang1*PI/180);
-        double sa=sin(ang1*PI/180);
-        ang1=norm(ang1+180);
-        if(ca*dy1<0)
-            ang1=norm(ang1+180);
-        double ang2=atan(dx2/dy2)*180/PI;
-        if(ix>=std::min(p.x,q.x)&&ix<=std::max(p.x,q.x)&&
-           iy>=std::min(p.y,q.y)&&iy<=std::max(p.y,q.y)&&
-           ix>=std::min(s.p.x,s.q.x)&&ix<=std::max(s.p.x,s.q.x)&&
-           iy>=std::min(s.p.y,s.q.y)&&iy<=std::max(s.p.y,s.q.y)) {
-            return {{ix, iy}, norm(2 * ang2 - ang1)};
+    Section *nearest_intersected(Section &s)override{
+        if(intersects(s))
+            return this;
+        return nullptr;
+    }
+    virtual Point intersection(Section &s){
+        Point A=p;
+        Point B=q;
+        Point C=s.p;
+        Point D=s.q;
+        if(!intersects(s))
+            return NoPoint();
+
+        // Line AB represented as a1x + b1y = c1
+        double a1 = B.y - A.y;
+        double b1 = A.x - B.x;
+        double c1 = a1*(A.x) + b1*(A.y);
+
+        // Line CD represented as a2x + b2y = c2
+        double a2 = D.y - C.y;
+        double b2 = C.x - D.x;
+        double c2 = a2*(C.x)+ b2*(C.y);
+
+        double determinant = a1*b2 - a2*b1;
+
+        if (determinant == 0)
+        {
+            // The lines are parallel. This is simplified
+            // by returning a pair of FLT_MAX
+            return NoPoint();
         }
         else
-            return {NoPoint(),0};
+        {
+            double x = (b2*c1 - b1*c2)/determinant;
+            double y = (a1*c2 - a2*c1)/determinant;
+            return Point(x, y);//,norm(2*ang1-ang2)};
+        }
     }
+
+    virtual double ReflectedAngle(Point point,double a){
+
+        double dx=q.x-p.x;
+        double dy=q.y-p.y;
+        double ang= dy==0? 90: atan(dx/dy)*180/PI;
+        if(sin(ang*PI/180)*dx<0)
+            ang=norm(ang+180);
+        return norm(2*ang-a);
+    }
+
+    virtual void Update(GameObject *map) {};
+    virtual Point nextPos(){return NoPoint();}
+    virtual Point curPos(){return NoPoint();}
+
+    virtual void show(ViewField &field){}
 };
 #endif //SEMWORK_SECTION_H

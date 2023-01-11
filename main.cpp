@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Arkanoid.h"
-
+#include <iostream>
+#include <sstream>
+#include <fstream>
 void set_raw(bool set) {
     if (set) {
         system("stty raw");  // enable raw
@@ -9,9 +11,15 @@ void set_raw(bool set) {
     }
 }
 int main(int argc, char *argv[]) {
+    if(argc<2) {
+        printf("Usage: %s {random|filepath}", argv[0]);
+        return 1;
+    }
+
     set_raw(true);
-   // double d=atof(argv[1]);
-    auto ark=Arkanoid(25,25,90);
+    auto ss=std::ifstream(argv[1]);
+    std::istream* is=&ss;
+    auto ark=Arkanoid(new Map(*is));
     printf("\n\r");
     auto inputThread = [](Arkanoid& a) {
         std::cout << "\rStart input thread\n";

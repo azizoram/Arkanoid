@@ -4,27 +4,27 @@
 
 #ifndef SEMWORK_BRICK_H
 #define SEMWORK_BRICK_H
-#include "Fourangle.h"
+#include "Rectangle.h"
 
-class Brick: public Fourangle{
+class Brick: public Rectangle{
     unsigned int x,y,h;//health
 public:
-    Brick(double x,double y,int h):x(x),y(y), Fourangle(x, y,x+1,y+1), h(h){}
-    void Collide(GayObject *obj) override {h--;};
-
-    char getChar() override{
-        return '0'+h;
+    Brick(double x,double y,int h): x(x), y(y), Rectangle(x, y, x + 1, y + 1), h(h){}
+    void Collide(GameObject *obj) override {h--;if(h < 0)h=0;};
+    bool intersects(const Section &s) override{
+        if(h>0)
+            return Rectangle::intersects(s);
+        return false;
     }
-
-    Point intersection(Section &s) {
-        if(h<=0)
-            return NoPoint();
-        else
-            return Fourangle::intersection(s);
+    Point intersection(Section &s) override{
+        if(h>0)
+            return Rectangle::intersection(s);
+        return NoPoint();
     }
     void show(ViewField &f) override{
         if(h>0)
             f.Set(int(x),int(y),'0'+h);
+
     }
 };
 #endif //SEMWORK_BRICK_H
