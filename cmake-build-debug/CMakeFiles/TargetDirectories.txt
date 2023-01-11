@@ -1,3 +1,4 @@
 /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/tests.dir
 /mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir
+/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/arkanoid.dir

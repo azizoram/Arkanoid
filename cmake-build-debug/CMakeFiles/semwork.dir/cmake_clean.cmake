@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/semwork.dir/Bottom.cpp.o"
   "CMakeFiles/semwork.dir/ComplexObject.cpp.o"
   "CMakeFiles/semwork.dir/GameObject.cpp.o"
-  "CMakeFiles/semwork.dir/Interactive.cpp.o"
   "CMakeFiles/semwork.dir/Map.cpp.o"
   "CMakeFiles/semwork.dir/Point.cpp.o"
   "CMakeFiles/semwork.dir/Rectangle.cpp.o"

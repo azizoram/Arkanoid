@@ -6,31 +6,43 @@
 #define SEMWORK_BALL_H
 
 #include "Point.h"
-#include "Interactive.h"
 #include "Section.h"
 #include <math.h>
 
 #define PI 3.14159265
 
+/**
+ * \class represents game ball
+ */
 class Ball: public Point{
-    double a,s;//x, y , angle, speed
+    /** @atribut a is angle
+     *  @atribut s is speed
+     *  @atribut dead is true if the ball is dead
+     */
+    double a,s;
     bool dead=false;
-    void die(){
-        a=s=0;
-        dead= true;
-    }
+
+//    void die(){
+//        a=s=0;
+//        dead= true;
+//    }
 public:
+    /**
+     *
+     * @param x - x coordinate of ball
+     * @param y - y coordinate of ball
+     * @param a - angle of ball direction
+     * @param s - speed of ball
+     */
     Ball(double x,double y,double a,double s): Point(x,y), a(a), s(s){}
     void Update(GameObject *map) override;
-    void Collide(GameObject *gay) override ;
-    Point nextPos() override;;
+    void Collide(GameObject *gameObject) override ;
+    Point nextPos() override;
     void show(ViewField &f) override{
         if(!dead)f.Set(int(x),int(y),'*');
     }
 
-    virtual Point curPos(){return {x,y};}
-
-
+    Point curPos() override{return {x,y};}
 };
 
 

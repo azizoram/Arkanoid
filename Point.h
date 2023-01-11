@@ -9,12 +9,30 @@
 #include <cmath>
 #include "GameObject.h"
 
-struct Point: public GameObject {
+/** \class Point represents euclidean point **/
+class Point: public GameObject {
+public:
+    /**
+     *
+     * @param x - x coordinate
+     * @param y - y coordinate
+     */
     Point(double x,double y):x(x),y(y){}
     Point(int x,int y):x(x),y(y){}
     double x;
     double y;
-    bool isNop(){return std::isnan(x)||std::isnan(y);}
+    /**
+     *
+     * @return true if point is not exist or doesn't make sense
+     */
+    bool isNop(){
+        return std::isnan(x)||std::isnan(y);
+    }
+    /**
+     *
+     * @param p - point
+     * @return euclidean distance between two point
+     */
     double distance(Point &p){
         if (isNop()||p.isNop())
             return std::nan("");
@@ -23,8 +41,12 @@ struct Point: public GameObject {
         return sqrt(dx*dx+dy*dy);
     }
 
-    virtual Point intersection(Section &s);
     virtual void Update(GameObject *map) {};
+    /**
+     *
+     * @return current position
+     * By default point doesn't move
+     */
     virtual Point nextPos(){return curPos();}
     virtual Point curPos(){return *this;}
 
