@@ -1,23 +1,24 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/mnt/c/Users/ramir/studium/arkanoid/Ball.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Ball.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/Bottom.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Bottom.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/ComplexObject.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/ComplexObject.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/GameObject.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/GameObject.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/Interactive.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Interactive.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/Map.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Map.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/Point.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Point.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/Rectangle.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Rectangle.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/ViewField.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/ViewField.cpp.o"
+  "/mnt/c/Users/ramir/studium/arkanoid/main.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/main.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/user/arkanoid/Ball.cpp" "CMakeFiles/semwork.dir/Ball.cpp.o" "gcc" "CMakeFiles/semwork.dir/Ball.cpp.o.d"
-  "/home/user/arkanoid/Bottom.cpp" "CMakeFiles/semwork.dir/Bottom.cpp.o" "gcc" "CMakeFiles/semwork.dir/Bottom.cpp.o.d"
-  "/home/user/arkanoid/ComplexObject.cpp" "CMakeFiles/semwork.dir/ComplexObject.cpp.o" "gcc" "CMakeFiles/semwork.dir/ComplexObject.cpp.o.d"
-  "/home/user/arkanoid/GameObject.cpp" "CMakeFiles/semwork.dir/GameObject.cpp.o" "gcc" "CMakeFiles/semwork.dir/GameObject.cpp.o.d"
-  "/home/user/arkanoid/Interactive.cpp" "CMakeFiles/semwork.dir/Interactive.cpp.o" "gcc" "CMakeFiles/semwork.dir/Interactive.cpp.o.d"
-  "/home/user/arkanoid/Map.cpp" "CMakeFiles/semwork.dir/Map.cpp.o" "gcc" "CMakeFiles/semwork.dir/Map.cpp.o.d"
-  "/home/user/arkanoid/Point.cpp" "CMakeFiles/semwork.dir/Point.cpp.o" "gcc" "CMakeFiles/semwork.dir/Point.cpp.o.d"
-  "/home/user/arkanoid/Rectangle.cpp" "CMakeFiles/semwork.dir/Rectangle.cpp.o" "gcc" "CMakeFiles/semwork.dir/Rectangle.cpp.o.d"
-  "/home/user/arkanoid/ViewField.cpp" "CMakeFiles/semwork.dir/ViewField.cpp.o" "gcc" "CMakeFiles/semwork.dir/ViewField.cpp.o.d"
-  "/home/user/arkanoid/main.cpp" "CMakeFiles/semwork.dir/main.cpp.o" "gcc" "CMakeFiles/semwork.dir/main.cpp.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # Targets to which this target links.
