@@ -12,7 +12,6 @@
 #include <array>
 #include <string>
 #include "GameObject.h"
-#include "Wall.h"
 #include "Ball.h"
 #include "Paddle.h"
 #include "Bottom.h"
@@ -20,12 +19,16 @@
 #include <random>
 #include <time.h>
 #include "Map.h"
+#include <mutex>
 
+/**
+ * Arkanoid wraps of game, stores map
+ */
 class Arkanoid{
-    Map *map;
-    std::vector<GameObject *> interactive_objects;
-    int ballsn=5;
-    bool working=true;
+    Map *map; /**< Object that represents game map ai all game objects >**/
+    int ballsn=5; /**< Number of ball left >**/
+    bool working=true; /**< Working status >**/
+    std::mutex update_mtx;
 public:
     Arkanoid(Map *m):map(m){
     }
@@ -35,26 +38,34 @@ public:
     void stop(){
         working=false;
     }
+    /**
+     * Run game
+     */
     void run(){
         while(working){
             std::this_thread::sleep_for(std::chrono::milliseconds(20));
-            for(auto object:interactive_objects)
+            update_mtx.lock();
+            for(auto object:map->objects)
                 object->Update(map);
+            update_mtx.unlock();
         }
     }
+    /**
+     * Write out and update console
+     */
     void print(){
         while(working) {
             ViewField f(map->w,map->h);
             map->show(f);
             f.print();
             std::this_thread::sleep_for(std::chrono::milliseconds(20));
-
-            printf("\x1B[2J\x1B[H\n\r");
-            //for (int i = 0; i < h+2; ++i)
-            //    printf("\033[1A\r");
+            printf("\x1B[2J\x1B[H");
         }
-        printf("\x1B[2J\x1B[H\n\r");
+        printf("\x1B[2J\x1B[H");
     }
+    /**
+     * Read from input and update internal state
+     */
     void control(){
         termios oldt;
         tcgetattr(STDIN_FILENO, &oldt);
@@ -71,16 +82,20 @@ public:
                     stop();
                     break;
                 case 'a':
+                    update_mtx.lock();
                     if (lx  > 0)
                         map->bar->move(-1);
                     else
                         map->bar->move(-lx);
+                    update_mtx.unlock();
                     break;
                 case 'd':
+                    update_mtx.lock();
                     if (rx < map->w)
                         map->bar->move(1);
                     else
                         map->bar->move(map->w-rx);
+                    update_mtx.unlock();
                     break;
                 case ' ':
                     if(ballsn>0){
@@ -90,7 +105,6 @@ public:
                         ballsn--;
                         Ball* ball=new Ball((lx+rx)/2, map->bar->p.y-1.5, distr(eng), 0.2);
                         map->objects.push_back(ball);
-                        interactive_objects.push_back(ball);
                     }
                     break;
             }

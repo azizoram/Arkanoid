@@ -4,6 +4,3 @@
 
 #include "Point.h"
 
-Point Point::intersection(Section &s) {
-    return NoPoint();
-}

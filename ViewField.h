@@ -7,11 +7,22 @@
 
 #include <cstdio>
 
+/**
+ * \class view of the game in console
+ */
 class ViewField {
+    /**
+     * @atribut is field one dimensional array of characters represents two dimensional game field
+     */
     char *field;
     int width;
     int height;
 public:
+    /**
+     *
+     * @param w - width
+     * @param h - height
+     */
     ViewField(int w,int h):width(w),height(h){
         field = new char[w*h];
         for (int i = 0; i < w*h; ++i)
@@ -29,6 +40,9 @@ public:
             return field[y*width+x];
         return ' ';
     }
+    /**
+     * Write out console
+     */
     void print(){
         for (int i = 0; i < width+2; ++i)
             printf("#");
@@ -47,7 +61,7 @@ public:
         printf("q - quit\n\r");
         printf("a - move paddle left\n\r");
         printf("d - move paddle right\n\r");
-        printf("space - use ball\n\r");
+        printf("space - use ball\n\r ");
     }
 };
 

@@ -7,7 +7,11 @@
 #include "Rectangle.h"
 
 class Brick: public Rectangle{
-    unsigned int x,y,h;//health
+    //health
+protected:
+    unsigned int h;
+    unsigned int x;
+    unsigned int y;
 public:
     Brick(double x,double y,int h): x(x), y(y), Rectangle(x, y, x + 1, y + 1), h(h){}
     void Collide(GameObject *obj) override {h--;if(h < 0)h=0;};

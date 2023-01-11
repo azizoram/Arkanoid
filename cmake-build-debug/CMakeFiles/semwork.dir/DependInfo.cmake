@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/ramir/studium/arkanoid/Bottom.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Bottom.cpp.o"
   "/mnt/c/Users/ramir/studium/arkanoid/ComplexObject.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/ComplexObject.cpp.o"
   "/mnt/c/Users/ramir/studium/arkanoid/GameObject.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/GameObject.cpp.o"
-  "/mnt/c/Users/ramir/studium/arkanoid/Interactive.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Interactive.cpp.o"
   "/mnt/c/Users/ramir/studium/arkanoid/Map.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Map.cpp.o"
   "/mnt/c/Users/ramir/studium/arkanoid/Point.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Point.cpp.o"
   "/mnt/c/Users/ramir/studium/arkanoid/Rectangle.cpp" "/mnt/c/Users/ramir/studium/arkanoid/cmake-build-debug/CMakeFiles/semwork.dir/Rectangle.cpp.o"

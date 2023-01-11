@@ -11,15 +11,16 @@ void set_raw(bool set) {
     }
 }
 int main(int argc, char *argv[]) {
-    if(argc<2) {
-        printf("Usage: %s {random|filepath}", argv[0]);
+    if(argc !=2){
+        printf("Usage: %s filepath\n",argv[0]);
         return 1;
     }
 
     set_raw(true);
+    //auto ss=std::ifstream(argv[1]);
     auto ss=std::ifstream(argv[1]);
     std::istream* is=&ss;
-    auto ark=Arkanoid(new Map(*is));
+    Arkanoid ark(new Map(*is));
     printf("\n\r");
     auto inputThread = [](Arkanoid& a) {
         std::cout << "\rStart input thread\n";

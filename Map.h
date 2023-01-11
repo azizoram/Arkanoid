@@ -12,7 +12,10 @@
 #include "Brick.h"
 #include "Bottom.h"
 #include "Paddle.h"
-
+#include "BallBlock.h"
+/**
+ * \class Map represents game Map
+ */
 class Map: public ComplexObject {
 public:
     int w=-1;
@@ -34,6 +37,8 @@ public:
                 char ch=line[i];
                 if(ch>='0'&&ch<='9')
                     objects.push_back(new Brick(i,h,ch-'0'));
+                else if(ch=='!')
+                    objects.push_back(new BallBlock(i,h));
             }
             ++h;
         }
@@ -41,7 +46,7 @@ public:
         objects.push_back(new Section({0,0},{w,0}));
         objects.push_back(new Section({w,0},{w,h}));
         objects.push_back(new Bottom({w,h},{0,h}));
-        bar=new Paddle(w / 2 + 1, h - 1, w / 4);
+        bar=new Paddle(w / 2 + 1, h - 0.1, w / 4);
         objects.push_back(bar);
     }
 };

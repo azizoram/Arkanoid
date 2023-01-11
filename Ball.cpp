@@ -11,9 +11,9 @@ Point Ball::nextPos(){
     }
     return NoPoint();
 }
-void Ball::Collide(GameObject *gay) {
-    prev=gay;
-    if(gay->deadly()) {
+void Ball::Collide(GameObject *gameObject) {
+    prev=gameObject;
+    if(gameObject->deadly()) {
         dead = true;
         x = NoPoint().x;
         y = NoPoint().y;
