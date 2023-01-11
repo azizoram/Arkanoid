@@ -12,11 +12,12 @@
 #include <stdio.h>
 #include <cfloat>
 #define PI 3.14159265
-#define EPS 0.000000001
+
+/** helper function to calculate if points intersect**/
 inline double area (Point a, Point b, Point c) {
     return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
 }
-
+/** helper function to calculate if points intersect**/
 inline bool intersect_1 (double a, double b, double c, double d) {
     if (a > b)  std::swap (a, b);
     if (c > d)  std::swap (c, d);
@@ -25,12 +26,22 @@ inline bool intersect_1 (double a, double b, double c, double d) {
 
 class Section: public GameObject{
 public:
+    /**
+     *
+     * @param a any angle value
+     * @return a mod 360
+     */
     double norm(double a){
         if(a<0)
             return norm(a+360);
         return std::fmod(a,360);
     }
     Point p,q;
+    /**
+     *
+     * @param p1 - first point
+     * @param p2 - second point
+     */
     Section(Point p1,Point p2):p(p1),q(p2){}
 
     bool intersects(const Section& s) override{
@@ -87,6 +98,13 @@ public:
         }
     }
 
+
+    /**
+     *
+     * @param point of collision
+     * @param a original angle
+     * @return reflected angle
+     */
     virtual double ReflectedAngle(Point point,double a){
 
         double dx=q.x-p.x;
@@ -98,9 +116,6 @@ public:
     }
 
     virtual void Update(GameObject *map) {};
-    virtual Point nextPos(){return NoPoint();}
-    virtual Point curPos(){return NoPoint();}
-
     virtual void show(ViewField &field){}
 };
 #endif //SEMWORK_SECTION_H

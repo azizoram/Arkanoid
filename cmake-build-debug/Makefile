@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named semwork
+# Target rules for targets named tests
 
 # Build rule for target.
-semwork: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 semwork
-.PHONY : semwork
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-semwork/fast:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/build
-.PHONY : semwork/fast
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named arkanoid
+
+# Build rule for target.
+arkanoid: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arkanoid
+.PHONY : arkanoid
+
+# fast build rule for target.
+arkanoid/fast:
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/build
+.PHONY : arkanoid/fast
 
 Ball.o: Ball.cpp.o
 
@@ -129,7 +142,8 @@ Ball.o: Ball.cpp.o
 
 # target to build an object file
 Ball.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Ball.cpp.o
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Ball.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Ball.cpp.o
 .PHONY : Ball.cpp.o
 
 Ball.i: Ball.cpp.i
@@ -138,7 +152,8 @@ Ball.i: Ball.cpp.i
 
 # target to preprocess a source file
 Ball.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Ball.cpp.i
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Ball.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Ball.cpp.i
 .PHONY : Ball.cpp.i
 
 Ball.s: Ball.cpp.s
@@ -147,7 +162,8 @@ Ball.s: Ball.cpp.s
 
 # target to generate assembly for a file
 Ball.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Ball.cpp.s
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Ball.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Ball.cpp.s
 .PHONY : Ball.cpp.s
 
 Bottom.o: Bottom.cpp.o
@@ -156,7 +172,7 @@ Bottom.o: Bottom.cpp.o
 
 # target to build an object file
 Bottom.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Bottom.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Bottom.cpp.o
 .PHONY : Bottom.cpp.o
 
 Bottom.i: Bottom.cpp.i
@@ -165,7 +181,7 @@ Bottom.i: Bottom.cpp.i
 
 # target to preprocess a source file
 Bottom.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Bottom.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Bottom.cpp.i
 .PHONY : Bottom.cpp.i
 
 Bottom.s: Bottom.cpp.s
@@ -174,7 +190,7 @@ Bottom.s: Bottom.cpp.s
 
 # target to generate assembly for a file
 Bottom.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Bottom.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Bottom.cpp.s
 .PHONY : Bottom.cpp.s
 
 ComplexObject.o: ComplexObject.cpp.o
@@ -183,7 +199,7 @@ ComplexObject.o: ComplexObject.cpp.o
 
 # target to build an object file
 ComplexObject.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ComplexObject.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/ComplexObject.cpp.o
 .PHONY : ComplexObject.cpp.o
 
 ComplexObject.i: ComplexObject.cpp.i
@@ -192,7 +208,7 @@ ComplexObject.i: ComplexObject.cpp.i
 
 # target to preprocess a source file
 ComplexObject.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ComplexObject.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/ComplexObject.cpp.i
 .PHONY : ComplexObject.cpp.i
 
 ComplexObject.s: ComplexObject.cpp.s
@@ -201,7 +217,7 @@ ComplexObject.s: ComplexObject.cpp.s
 
 # target to generate assembly for a file
 ComplexObject.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ComplexObject.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/ComplexObject.cpp.s
 .PHONY : ComplexObject.cpp.s
 
 GameObject.o: GameObject.cpp.o
@@ -210,7 +226,7 @@ GameObject.o: GameObject.cpp.o
 
 # target to build an object file
 GameObject.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GameObject.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/GameObject.cpp.o
 .PHONY : GameObject.cpp.o
 
 GameObject.i: GameObject.cpp.i
@@ -219,7 +235,7 @@ GameObject.i: GameObject.cpp.i
 
 # target to preprocess a source file
 GameObject.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GameObject.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/GameObject.cpp.i
 .PHONY : GameObject.cpp.i
 
 GameObject.s: GameObject.cpp.s
@@ -228,35 +244,8 @@ GameObject.s: GameObject.cpp.s
 
 # target to generate assembly for a file
 GameObject.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/GameObject.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/GameObject.cpp.s
 .PHONY : GameObject.cpp.s
-
-Interactive.o: Interactive.cpp.o
-
-.PHONY : Interactive.o
-
-# target to build an object file
-Interactive.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Interactive.cpp.o
-.PHONY : Interactive.cpp.o
-
-Interactive.i: Interactive.cpp.i
-
-.PHONY : Interactive.i
-
-# target to preprocess a source file
-Interactive.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Interactive.cpp.i
-.PHONY : Interactive.cpp.i
-
-Interactive.s: Interactive.cpp.s
-
-.PHONY : Interactive.s
-
-# target to generate assembly for a file
-Interactive.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Interactive.cpp.s
-.PHONY : Interactive.cpp.s
 
 Map.o: Map.cpp.o
 
@@ -264,7 +253,7 @@ Map.o: Map.cpp.o
 
 # target to build an object file
 Map.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Map.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Map.cpp.o
 .PHONY : Map.cpp.o
 
 Map.i: Map.cpp.i
@@ -273,7 +262,7 @@ Map.i: Map.cpp.i
 
 # target to preprocess a source file
 Map.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Map.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Map.cpp.i
 .PHONY : Map.cpp.i
 
 Map.s: Map.cpp.s
@@ -282,7 +271,7 @@ Map.s: Map.cpp.s
 
 # target to generate assembly for a file
 Map.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Map.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Map.cpp.s
 .PHONY : Map.cpp.s
 
 Point.o: Point.cpp.o
@@ -291,7 +280,7 @@ Point.o: Point.cpp.o
 
 # target to build an object file
 Point.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Point.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Point.cpp.o
 .PHONY : Point.cpp.o
 
 Point.i: Point.cpp.i
@@ -300,7 +289,7 @@ Point.i: Point.cpp.i
 
 # target to preprocess a source file
 Point.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Point.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Point.cpp.i
 .PHONY : Point.cpp.i
 
 Point.s: Point.cpp.s
@@ -309,7 +298,7 @@ Point.s: Point.cpp.s
 
 # target to generate assembly for a file
 Point.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Point.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Point.cpp.s
 .PHONY : Point.cpp.s
 
 Rectangle.o: Rectangle.cpp.o
@@ -318,7 +307,7 @@ Rectangle.o: Rectangle.cpp.o
 
 # target to build an object file
 Rectangle.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rectangle.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Rectangle.cpp.o
 .PHONY : Rectangle.cpp.o
 
 Rectangle.i: Rectangle.cpp.i
@@ -327,7 +316,7 @@ Rectangle.i: Rectangle.cpp.i
 
 # target to preprocess a source file
 Rectangle.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rectangle.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Rectangle.cpp.i
 .PHONY : Rectangle.cpp.i
 
 Rectangle.s: Rectangle.cpp.s
@@ -336,7 +325,7 @@ Rectangle.s: Rectangle.cpp.s
 
 # target to generate assembly for a file
 Rectangle.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/Rectangle.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/Rectangle.cpp.s
 .PHONY : Rectangle.cpp.s
 
 ViewField.o: ViewField.cpp.o
@@ -345,7 +334,7 @@ ViewField.o: ViewField.cpp.o
 
 # target to build an object file
 ViewField.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ViewField.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/ViewField.cpp.o
 .PHONY : ViewField.cpp.o
 
 ViewField.i: ViewField.cpp.i
@@ -354,7 +343,7 @@ ViewField.i: ViewField.cpp.i
 
 # target to preprocess a source file
 ViewField.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ViewField.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/ViewField.cpp.i
 .PHONY : ViewField.cpp.i
 
 ViewField.s: ViewField.cpp.s
@@ -363,7 +352,7 @@ ViewField.s: ViewField.cpp.s
 
 # target to generate assembly for a file
 ViewField.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/ViewField.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/ViewField.cpp.s
 .PHONY : ViewField.cpp.s
 
 main.o: main.cpp.o
@@ -372,7 +361,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -381,7 +370,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -390,8 +379,35 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/semwork.dir/build.make CMakeFiles/semwork.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/arkanoid.dir/build.make CMakeFiles/arkanoid.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+tests.o: tests.cpp.o
+
+.PHONY : tests.o
+
+# target to build an object file
+tests.cpp.o:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests.cpp.o
+.PHONY : tests.cpp.o
+
+tests.i: tests.cpp.i
+
+.PHONY : tests.i
+
+# target to preprocess a source file
+tests.cpp.i:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests.cpp.i
+.PHONY : tests.cpp.i
+
+tests.s: tests.cpp.s
+
+.PHONY : tests.s
+
+# target to generate assembly for a file
+tests.cpp.s:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests.cpp.s
+.PHONY : tests.cpp.s
 
 # Help Target
 help:
@@ -400,8 +416,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... tests"
 	@echo "... edit_cache"
-	@echo "... semwork"
+	@echo "... arkanoid"
 	@echo "... Ball.o"
 	@echo "... Ball.i"
 	@echo "... Ball.s"
@@ -414,9 +431,6 @@ help:
 	@echo "... GameObject.o"
 	@echo "... GameObject.i"
 	@echo "... GameObject.s"
-	@echo "... Interactive.o"
-	@echo "... Interactive.i"
-	@echo "... Interactive.s"
 	@echo "... Map.o"
 	@echo "... Map.i"
 	@echo "... Map.s"
@@ -432,6 +446,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests.o"
+	@echo "... tests.i"
+	@echo "... tests.s"
 .PHONY : help
 
 
