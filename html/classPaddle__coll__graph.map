@@ -1,0 +1,6 @@
+<map id="Paddle" name="Paddle">
+<area shape="rect" id="node1" title=" " alt="" coords="29,264,95,291"/>
+<area shape="rect" id="node2" href="$classSection.html" title=" " alt="" coords="27,188,97,215"/>
+<area shape="rect" id="node3" href="$classGameObject.html" title=" " alt="" coords="5,7,108,33"/>
+<area shape="rect" id="node4" href="$classPoint.html" title=" " alt="" coords="79,84,133,111"/>
+</map>

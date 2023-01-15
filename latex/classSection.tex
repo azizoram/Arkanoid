@@ -1,0 +1,146 @@
+\hypertarget{classSection}{}\doxysection{Section Class Reference}
+\label{classSection}\index{Section@{Section}}
+
+
+Inheritance diagram for Section\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classSection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classSection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSection_afd0c9b1f0863fdc9917d2cc4df276a2e}{norm}} (double a)
+\item 
+\mbox{\hyperlink{classSection_af5b629c98822d7db2797b7c67c9f44e7}{Section}} (\mbox{\hyperlink{classPoint}{Point}} p1, \mbox{\hyperlink{classPoint}{Point}} p2)
+\item 
+bool \mbox{\hyperlink{classSection_a7e3fc47830c04408da13d0e8a4c19997}{intersects}} (const \mbox{\hyperlink{classSection}{Section}} \&s) override
+\item 
+\mbox{\Hypertarget{classSection_ad06e583f21fb0ecf2f3a675ab139acb6}\label{classSection_ad06e583f21fb0ecf2f3a675ab139acb6}} 
+\mbox{\hyperlink{classSection}{Section}} $\ast$ {\bfseries nearest\+\_\+intersected} (\mbox{\hyperlink{classSection}{Section}} \&s) override
+\item 
+\mbox{\Hypertarget{classSection_a3fe8ea77a6e0ab91e18f0654aa1ddd55}\label{classSection_a3fe8ea77a6e0ab91e18f0654aa1ddd55}} 
+virtual \mbox{\hyperlink{classPoint}{Point}} {\bfseries intersection} (\mbox{\hyperlink{classSection}{Section}} \&s)
+\item 
+virtual double \mbox{\hyperlink{classSection_a2ddad162d1aef1fda241dcc33efc80eb}{Reflected\+Angle}} (\mbox{\hyperlink{classPoint}{Point}} point, double a)
+\item 
+virtual void \mbox{\hyperlink{classSection_a6f61ae0e60c919733b167e758d72b670}{Update}} (\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$map)
+\item 
+virtual void \mbox{\hyperlink{classSection_a157ee1b12df8d79b1e937741f629a65d}{show}} (\mbox{\hyperlink{classViewField}{View\+Field}} \&field)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSection_aee40547316cc8250055b58d99c5dfd73}\label{classSection_aee40547316cc8250055b58d99c5dfd73}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries p}
+\item 
+\mbox{\Hypertarget{classSection_ae43f65387ab84c2bd42a5f8a9c7fb533}\label{classSection_ae43f65387ab84c2bd42a5f8a9c7fb533}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries q}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSection_af5b629c98822d7db2797b7c67c9f44e7}\label{classSection_af5b629c98822d7db2797b7c67c9f44e7}} 
+\index{Section@{Section}!Section@{Section}}
+\index{Section@{Section}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{Section()}{Section()}}
+{\footnotesize\ttfamily Section\+::\+Section (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{p1,  }\item[{\mbox{\hyperlink{classPoint}{Point}}}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & -\/ first point \\
+\hline
+{\em p2} & -\/ second point \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSection_a7e3fc47830c04408da13d0e8a4c19997}\label{classSection_a7e3fc47830c04408da13d0e8a4c19997}} 
+\index{Section@{Section}!intersects@{intersects}}
+\index{intersects@{intersects}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}}
+{\footnotesize\ttfamily bool Section\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSection}{Section}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true if this sections intersects with object or false if not $>$ Returns pointer of the nearest section which is part of this object and intersects with given section if exists$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a39124c9488f4af50e351924a139ac1a8}{Game\+Object}}.
+
+\mbox{\Hypertarget{classSection_afd0c9b1f0863fdc9917d2cc4df276a2e}\label{classSection_afd0c9b1f0863fdc9917d2cc4df276a2e}} 
+\index{Section@{Section}!norm@{norm}}
+\index{norm@{norm}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{norm()}{norm()}}
+{\footnotesize\ttfamily double Section\+::norm (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & any angle value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a mod 360 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSection_a2ddad162d1aef1fda241dcc33efc80eb}\label{classSection_a2ddad162d1aef1fda241dcc33efc80eb}} 
+\index{Section@{Section}!ReflectedAngle@{ReflectedAngle}}
+\index{ReflectedAngle@{ReflectedAngle}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{ReflectedAngle()}{ReflectedAngle()}}
+{\footnotesize\ttfamily virtual double Section\+::\+Reflected\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{point,  }\item[{double}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & of collision \\
+\hline
+{\em a} & original angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reflected angle 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classPaddle_a320c196fe6a0867d700d678e3b897cef}{Paddle}}.
+
+\mbox{\Hypertarget{classSection_a157ee1b12df8d79b1e937741f629a65d}\label{classSection_a157ee1b12df8d79b1e937741f629a65d}} 
+\index{Section@{Section}!show@{show}}
+\index{show@{show}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily virtual void Section\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewField}{View\+Field}} \&}]{field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Method which implements the graphical representation of the object $>$ 
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a0ea746bdb61ddcfdf588fbc53d205553}{Game\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPaddle_a2b355661f7a5676328ffd01ec140de9a}{Paddle}}.
+
+\mbox{\Hypertarget{classSection_a6f61ae0e60c919733b167e758d72b670}\label{classSection_a6f61ae0e60c919733b167e758d72b670}} 
+\index{Section@{Section}!Update@{Update}}
+\index{Update@{Update}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Section\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Update state of game object and map $>$ 
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a32ea9a5787b32c0583d34788e163d586}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Section.\+h\end{DoxyCompactItemize}

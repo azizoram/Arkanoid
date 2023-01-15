@@ -22,10 +22,6 @@ class Ball: public Point{
     double a,s;
     bool dead=false;
 
-//    void die(){
-//        a=s=0;
-//        dead= true;
-//    }
 public:
     /**
      *

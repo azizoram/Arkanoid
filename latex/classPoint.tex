@@ -1,0 +1,158 @@
+\hypertarget{classPoint}{}\doxysection{Point Class Reference}
+\label{classPoint}\index{Point@{Point}}
+
+
+Inheritance diagram for Point\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classPoint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Point\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classPoint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoint_a78b55e8d5466bb8c2cf60fa55f2562ff}{Point}} (double x, double y)
+\item 
+\mbox{\Hypertarget{classPoint_a001c4958c310b248f5c26037aea38a9c}\label{classPoint_a001c4958c310b248f5c26037aea38a9c}} 
+{\bfseries Point} (int x, int y)
+\item 
+bool \mbox{\hyperlink{classPoint_a84ad64a6eb6496015c4e8ffa7a52311e}{is\+Nop}} ()
+\item 
+double \mbox{\hyperlink{classPoint_aeac9c4e6e7cc612221cb3937e0a41557}{distance}} (\mbox{\hyperlink{classPoint}{Point}} \&p)
+\item 
+virtual void \mbox{\hyperlink{classPoint_a9819efce1065ddbc01785ce9afb975cc}{Update}} (\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$map)
+\item 
+virtual \mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classPoint_aab1624043706e4adde965f592a743179}{next\+Pos}} ()
+\item 
+\mbox{\Hypertarget{classPoint_aadb0b9deedb159f894fb51cd94bbad6a}\label{classPoint_aadb0b9deedb159f894fb51cd94bbad6a}} 
+virtual \mbox{\hyperlink{classPoint}{Point}} {\bfseries cur\+Pos} ()
+\item 
+virtual void \mbox{\hyperlink{classPoint_a34be17aa6816e862ded30e20d667d41c}{Collide}} (\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$gay)
+\item 
+virtual void \mbox{\hyperlink{classPoint_a2153c5a0b5b98dea6697bdf53230ea33}{show}} (\mbox{\hyperlink{classViewField}{View\+Field}} \&field)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoint_ab99c56589bc8ad5fa5071387110a5bc7}\label{classPoint_ab99c56589bc8ad5fa5071387110a5bc7}} 
+double {\bfseries x}
+\item 
+\mbox{\Hypertarget{classPoint_afa38be143ae800e6ad69ce8ed4df62d8}\label{classPoint_afa38be143ae800e6ad69ce8ed4df62d8}} 
+double {\bfseries y}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+point 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoint_a78b55e8d5466bb8c2cf60fa55f2562ff}\label{classPoint_a78b55e8d5466bb8c2cf60fa55f2562ff}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ x coordinate \\
+\hline
+{\em y} & -\/ y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoint_a34be17aa6816e862ded30e20d667d41c}\label{classPoint_a34be17aa6816e862ded30e20d667d41c}} 
+\index{Point@{Point}!Collide@{Collide}}
+\index{Collide@{Collide}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Collide()}{Collide()}}
+{\footnotesize\ttfamily virtual void Point\+::\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$}]{game\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The method that is called when objects collide $>$ 
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a00c78ad76f42a6dc3aad536173ed727e}{Game\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classBall_a92c4092cea5986939c1869d04aec17c0}{Ball}}.
+
+\mbox{\Hypertarget{classPoint_aeac9c4e6e7cc612221cb3937e0a41557}\label{classPoint_aeac9c4e6e7cc612221cb3937e0a41557}} 
+\index{Point@{Point}!distance@{distance}}
+\index{distance@{distance}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily double Point\+::distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+euclidean distance between two point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_a84ad64a6eb6496015c4e8ffa7a52311e}\label{classPoint_a84ad64a6eb6496015c4e8ffa7a52311e}} 
+\index{Point@{Point}!isNop@{isNop}}
+\index{isNop@{isNop}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{isNop()}{isNop()}}
+{\footnotesize\ttfamily bool Point\+::is\+Nop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+true if point is not exist or doesn\textquotesingle{}t make sense 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint_aab1624043706e4adde965f592a743179}\label{classPoint_aab1624043706e4adde965f592a743179}} 
+\index{Point@{Point}!nextPos@{nextPos}}
+\index{nextPos@{nextPos}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{nextPos()}{nextPos()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classPoint}{Point}} Point\+::next\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+current position By default point doesn\textquotesingle{}t move 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classBall_a2460e36b33c48f8aea8763ca11a349c9}{Ball}}.
+
+\mbox{\Hypertarget{classPoint_a2153c5a0b5b98dea6697bdf53230ea33}\label{classPoint_a2153c5a0b5b98dea6697bdf53230ea33}} 
+\index{Point@{Point}!show@{show}}
+\index{show@{show}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily virtual void Point\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewField}{View\+Field}} \&}]{field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Method which implements the graphical representation of the object $>$ 
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a0ea746bdb61ddcfdf588fbc53d205553}{Game\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classBall_adfc2ff4ecf394ff5538bbfdd4e6d7630}{Ball}}.
+
+\mbox{\Hypertarget{classPoint_a9819efce1065ddbc01785ce9afb975cc}\label{classPoint_a9819efce1065ddbc01785ce9afb975cc}} 
+\index{Point@{Point}!Update@{Update}}
+\index{Update@{Update}!Point@{Point}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Point\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Update state of game object and map $>$ 
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a32ea9a5787b32c0583d34788e163d586}{Game\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classBall_ac4af3359378f4671dc2d18a7817ef6a0}{Ball}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Point.\+h\end{DoxyCompactItemize}

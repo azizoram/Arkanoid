@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/arkanoid.dir/main.cpp.o CMakeFiles/arkanoid.dir/Ball.cpp.o CMakeFiles/arkanoid.dir/GameObject.cpp.o CMakeFiles/arkanoid.dir/Point.cpp.o CMakeFiles/arkanoid.dir/Rectangle.cpp.o CMakeFiles/arkanoid.dir/ViewField.cpp.o CMakeFiles/arkanoid.dir/ComplexObject.cpp.o CMakeFiles/arkanoid.dir/Bottom.cpp.o CMakeFiles/arkanoid.dir/Map.cpp.o -o arkanoid 

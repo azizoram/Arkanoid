@@ -1,0 +1,105 @@
+\hypertarget{classPaddle}{}\doxysection{Paddle Class Reference}
+\label{classPaddle}\index{Paddle@{Paddle}}
+
+
+Inheritance diagram for Paddle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classPaddle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Paddle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classPaddle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPaddle_aba2ea1bf11923dbe98e514cdb54df135}{Paddle}} (double x, double y, double w)
+\item 
+void \mbox{\hyperlink{classPaddle_a2b355661f7a5676328ffd01ec140de9a}{show}} (\mbox{\hyperlink{classViewField}{View\+Field}} \&f) override
+\item 
+void \mbox{\hyperlink{classPaddle_a4f1aa928be656417b111e71091dfeced}{move}} (double d)
+\item 
+double \mbox{\hyperlink{classPaddle_a320c196fe6a0867d700d678e3b897cef}{Reflected\+Angle}} (\mbox{\hyperlink{classPoint}{Point}} point, double a) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPaddle_a8b94bb0d54fa978d9eb412ba64519fc8}\label{classPaddle_a8b94bb0d54fa978d9eb412ba64519fc8}} 
+double {\bfseries w}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPaddle_aba2ea1bf11923dbe98e514cdb54df135}\label{classPaddle_aba2ea1bf11923dbe98e514cdb54df135}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ x coordinate of paddle center \\
+\hline
+{\em y} & -\/ y coordinate of paddle center \\
+\hline
+{\em w} & -\/ half of paddle width \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPaddle_a4f1aa928be656417b111e71091dfeced}\label{classPaddle_a4f1aa928be656417b111e71091dfeced}} 
+\index{Paddle@{Paddle}!move@{move}}
+\index{move@{move}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Paddle\+::move (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+moves by x axis 
+\begin{DoxyParams}{Parameters}
+{\em d} & distance to move \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPaddle_a320c196fe6a0867d700d678e3b897cef}\label{classPaddle_a320c196fe6a0867d700d678e3b897cef}} 
+\index{Paddle@{Paddle}!ReflectedAngle@{ReflectedAngle}}
+\index{ReflectedAngle@{ReflectedAngle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{ReflectedAngle()}{ReflectedAngle()}}
+{\footnotesize\ttfamily double Paddle\+::\+Reflected\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{point,  }\item[{double}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & of collision \\
+\hline
+{\em a} & original angle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reflected angle 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSection_a2ddad162d1aef1fda241dcc33efc80eb}{Section}}.
+
+\mbox{\Hypertarget{classPaddle_a2b355661f7a5676328ffd01ec140de9a}\label{classPaddle_a2b355661f7a5676328ffd01ec140de9a}} 
+\index{Paddle@{Paddle}!show@{show}}
+\index{show@{show}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Paddle\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewField}{View\+Field}} \&}]{field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Method which implements the graphical representation of the object $>$ 
+
+Reimplemented from \mbox{\hyperlink{classSection_a157ee1b12df8d79b1e937741f629a65d}{Section}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Paddle.\+h\end{DoxyCompactItemize}

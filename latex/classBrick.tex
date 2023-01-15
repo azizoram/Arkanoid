@@ -1,0 +1,90 @@
+\hypertarget{classBrick}{}\doxysection{Brick Class Reference}
+\label{classBrick}\index{Brick@{Brick}}
+
+
+Inheritance diagram for Brick\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classBrick__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Brick\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classBrick__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBrick_a2e73ac4d571a62bb9b86e0d441f8e35b}\label{classBrick_a2e73ac4d571a62bb9b86e0d441f8e35b}} 
+{\bfseries Brick} (double x, double y, int h)
+\item 
+void \mbox{\hyperlink{classBrick_abc651d5704539a11acc127c8db308555}{Collide}} (\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$obj) override
+\item 
+bool \mbox{\hyperlink{classBrick_a50b075ba8adbd9197b82d89971e7d396}{intersects}} (const \mbox{\hyperlink{classSection}{Section}} \&s) override
+\item 
+\mbox{\Hypertarget{classBrick_a9bbcae19ca8b712ee19da8814b45762d}\label{classBrick_a9bbcae19ca8b712ee19da8814b45762d}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries intersection} (\mbox{\hyperlink{classSection}{Section}} \&s) override
+\item 
+void \mbox{\hyperlink{classBrick_a3f9ba553600ee953bbef52c332b09e29}{show}} (\mbox{\hyperlink{classViewField}{View\+Field}} \&f) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBrick_a0a7ca17b1a8d52d0b17fcc6262e183d5}\label{classBrick_a0a7ca17b1a8d52d0b17fcc6262e183d5}} 
+unsigned int {\bfseries h}
+\item 
+\mbox{\Hypertarget{classBrick_a12359a4a243d7ea67072df38dddddf86}\label{classBrick_a12359a4a243d7ea67072df38dddddf86}} 
+unsigned int {\bfseries x}
+\item 
+\mbox{\Hypertarget{classBrick_ac4d2a8e8211fc48f9c42fe98b6a1a23f}\label{classBrick_ac4d2a8e8211fc48f9c42fe98b6a1a23f}} 
+unsigned int {\bfseries y}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBrick_abc651d5704539a11acc127c8db308555}\label{classBrick_abc651d5704539a11acc127c8db308555}} 
+\index{Brick@{Brick}!Collide@{Collide}}
+\index{Collide@{Collide}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{Collide()}{Collide()}}
+{\footnotesize\ttfamily void Brick\+::\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$}]{game\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The method that is called when objects collide $>$ 
+
+Reimplemented from \mbox{\hyperlink{classComplexObject_ada830d5b0a68b08aca3c4ae62371e3dd}{Complex\+Object}}.
+
+\mbox{\Hypertarget{classBrick_a50b075ba8adbd9197b82d89971e7d396}\label{classBrick_a50b075ba8adbd9197b82d89971e7d396}} 
+\index{Brick@{Brick}!intersects@{intersects}}
+\index{intersects@{intersects}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}}
+{\footnotesize\ttfamily bool Brick\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSection}{Section}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true if this sections intersects with object or false if not $>$ Returns pointer of the nearest section which is part of this object and intersects with given section if exists$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a39124c9488f4af50e351924a139ac1a8}{Game\+Object}}.
+
+\mbox{\Hypertarget{classBrick_a3f9ba553600ee953bbef52c332b09e29}\label{classBrick_a3f9ba553600ee953bbef52c332b09e29}} 
+\index{Brick@{Brick}!show@{show}}
+\index{show@{show}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Brick\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewField}{View\+Field}} \&}]{field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Method which implements the graphical representation of the object $>$ 
+
+Reimplemented from \mbox{\hyperlink{classComplexObject_ab365498934a63b266190a5060b564344}{Complex\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Brick.\+h\end{DoxyCompactItemize}

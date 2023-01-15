@@ -1,0 +1,111 @@
+\hypertarget{classComplexObject}{}\doxysection{Complex\+Object Class Reference}
+\label{classComplexObject}\index{ComplexObject@{ComplexObject}}
+
+
+Inheritance diagram for Complex\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classComplexObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Complex\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classComplexObject__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComplexObject_aa9f714ba0c091116ae43686530f1bc00}\label{classComplexObject_aa9f714ba0c091116ae43686530f1bc00}} 
+{\bfseries Complex\+Object} (std\+::vector$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$ $>$ s)
+\item 
+bool \mbox{\hyperlink{classComplexObject_a3f4942b00a10ad519bc04032d8dbadf7}{intersects}} (const \mbox{\hyperlink{classSection}{Section}} \&s) override
+\item 
+\mbox{\Hypertarget{classComplexObject_a9ced81e13eb1d0a6cf9996966267d685}\label{classComplexObject_a9ced81e13eb1d0a6cf9996966267d685}} 
+virtual \mbox{\hyperlink{classPoint}{Point}} {\bfseries intersection} (\mbox{\hyperlink{classSection}{Section}} \&s)
+\item 
+\mbox{\Hypertarget{classComplexObject_a8d553da9c7f7c04533ee1f88ce7f33cd}\label{classComplexObject_a8d553da9c7f7c04533ee1f88ce7f33cd}} 
+\mbox{\hyperlink{classSection}{Section}} $\ast$ {\bfseries nearest\+\_\+intersected} (\mbox{\hyperlink{classSection}{Section}} \&s) override
+\item 
+virtual void \mbox{\hyperlink{classComplexObject_a9869419de9760d0ccb7a0b4af7850ae4}{Update}} (\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$map)
+\item 
+virtual void \mbox{\hyperlink{classComplexObject_ada830d5b0a68b08aca3c4ae62371e3dd}{Collide}} (\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$gay)
+\item 
+virtual void \mbox{\hyperlink{classComplexObject_ab365498934a63b266190a5060b564344}{show}} (\mbox{\hyperlink{classViewField}{View\+Field}} \&field)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComplexObject_a59fd2c66c7529b25f06f1d6a47eee135}\label{classComplexObject_a59fd2c66c7529b25f06f1d6a47eee135}} 
+std\+::vector$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$ $>$ {\bfseries objects}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComplexObject_ada830d5b0a68b08aca3c4ae62371e3dd}\label{classComplexObject_ada830d5b0a68b08aca3c4ae62371e3dd}} 
+\index{ComplexObject@{ComplexObject}!Collide@{Collide}}
+\index{Collide@{Collide}!ComplexObject@{ComplexObject}}
+\doxysubsubsection{\texorpdfstring{Collide()}{Collide()}}
+{\footnotesize\ttfamily virtual void Complex\+Object\+::\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$}]{game\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The method that is called when objects collide $>$ 
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a00c78ad76f42a6dc3aad536173ed727e}{Game\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classBrick_abc651d5704539a11acc127c8db308555}{Brick}}, and \mbox{\hyperlink{classBallBlock_aec7d284b73343077819773f752d20bd1}{Ball\+Block}}.
+
+\mbox{\Hypertarget{classComplexObject_a3f4942b00a10ad519bc04032d8dbadf7}\label{classComplexObject_a3f4942b00a10ad519bc04032d8dbadf7}} 
+\index{ComplexObject@{ComplexObject}!intersects@{intersects}}
+\index{intersects@{intersects}!ComplexObject@{ComplexObject}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}}
+{\footnotesize\ttfamily bool Complex\+Object\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSection}{Section}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true if this sections intersects with object or false if not $>$ Returns pointer of the nearest section which is part of this object and intersects with given section if exists$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a39124c9488f4af50e351924a139ac1a8}{Game\+Object}}.
+
+\mbox{\Hypertarget{classComplexObject_ab365498934a63b266190a5060b564344}\label{classComplexObject_ab365498934a63b266190a5060b564344}} 
+\index{ComplexObject@{ComplexObject}!show@{show}}
+\index{show@{show}!ComplexObject@{ComplexObject}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily virtual void Complex\+Object\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewField}{View\+Field}} \&}]{field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Method which implements the graphical representation of the object $>$ 
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a0ea746bdb61ddcfdf588fbc53d205553}{Game\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classBrick_a3f9ba553600ee953bbef52c332b09e29}{Brick}}, and \mbox{\hyperlink{classBallBlock_af03a5430686a0619125902727d71ff26}{Ball\+Block}}.
+
+\mbox{\Hypertarget{classComplexObject_a9869419de9760d0ccb7a0b4af7850ae4}\label{classComplexObject_a9869419de9760d0ccb7a0b4af7850ae4}} 
+\index{ComplexObject@{ComplexObject}!Update@{Update}}
+\index{Update@{Update}!ComplexObject@{ComplexObject}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Complex\+Object\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Update state of game object and map $>$ 
+
+Reimplemented from \mbox{\hyperlink{classGameObject_a32ea9a5787b32c0583d34788e163d586}{Game\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classBallBlock_a786c7c6f74a9d1720ec950cca1208cf6}{Ball\+Block}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Complex\+Object.\+h\end{DoxyCompactItemize}

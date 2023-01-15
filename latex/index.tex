@@ -1,0 +1,25 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ \hypertarget{index_autotoc_md1}{}\doxysection{Name}\label{index_autotoc_md1}
+\mbox{\hyperlink{classArkanoid}{Arkanoid}} game by Azizov Ramir\hypertarget{index_autotoc_md2}{}\doxysection{Task}\label{index_autotoc_md2}
+It is necessary to develop a computer program that implements the game \char`\"{}\+Arkanoid\char`\"{} in the C++ programming language. This program implements the classic version of the \mbox{\hyperlink{classArkanoid}{Arkanoid}} game. The main window contains a platform that moves horizontally from one wall to another, blocks fixed in place, and a ball that bounces off the platform, walls and blocks, destroying them in the process. The platform is controlled using the keys \char`\"{}\+A\char`\"{} and \char`\"{}\+D\char`\"{}, the launch of the ball at the beginning of the game by pressing the \char`\"{}space\char`\"{} key\hypertarget{index_autotoc_md3}{}\doxysection{Description}\label{index_autotoc_md3}
+Simple implementation of \mbox{\hyperlink{classArkanoid}{Arkanoid}} game \hypertarget{index_autotoc_md4}{}\doxysection{Implementation}\label{index_autotoc_md4}
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{classGameObject}{Game\+Object}}\+: This class is the base for all objects in the game. It handles all the movements and also collisions between two Game\+Objects. \begin{DoxyVerb}* Ball: 
+\end{DoxyVerb}
+ Derived from \mbox{\hyperlink{classGameObject}{Game\+Object}}. This is used before the user hits spacebar to start the game. \begin{DoxyVerb}* Brick:
+\end{DoxyVerb}
+ Derived from \mbox{\hyperlink{classGameObject}{Game\+Object}}. Not moveable. Has hitpoints and can be flaged destroyed.
+\end{DoxyItemize}
+
+\begin{DoxyVerb}* Arkanoid:
+\end{DoxyVerb}
+ Handles everything which happens in one played game. \begin{DoxyVerb}*Map:
+\end{DoxyVerb}
+ Represents a game map \begin{DoxyVerb}*Paddle:
+\end{DoxyVerb}
+ Derived from \mbox{\hyperlink{classGameObject}{Game\+Object}}. The only thing new here is that it can be reset to the init position. More in Doxygen Documentation\hypertarget{index_autotoc_md5}{}\doxysection{Installation}\label{index_autotoc_md5}
+The program is run from the command line.\hypertarget{index_autotoc_md6}{}\doxysection{Authors and acknowledgment}\label{index_autotoc_md6}
+@azizoram 2023\hypertarget{index_autotoc_md7}{}\doxysection{Project status}\label{index_autotoc_md7}
+Completed 

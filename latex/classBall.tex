@@ -1,0 +1,110 @@
+\hypertarget{classBall}{}\doxysection{Ball Class Reference}
+\label{classBall}\index{Ball@{Ball}}
+
+
+Inheritance diagram for Ball\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classBall__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ball\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classBall__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBall_a043c2f8e9faee388220c1727d6649e5f}{Ball}} (double x, double y, double a, double s)
+\item 
+void \mbox{\hyperlink{classBall_ac4af3359378f4671dc2d18a7817ef6a0}{Update}} (\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$map) override
+\item 
+void \mbox{\hyperlink{classBall_a92c4092cea5986939c1869d04aec17c0}{Collide}} (\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$game\+Object) override
+\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classBall_a2460e36b33c48f8aea8763ca11a349c9}{next\+Pos}} () override
+\item 
+void \mbox{\hyperlink{classBall_adfc2ff4ecf394ff5538bbfdd4e6d7630}{show}} (\mbox{\hyperlink{classViewField}{View\+Field}} \&f) override
+\item 
+\mbox{\Hypertarget{classBall_ad8a3a25e452049dd3f641a0fcdb12015}\label{classBall_ad8a3a25e452049dd3f641a0fcdb12015}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries cur\+Pos} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBall_a043c2f8e9faee388220c1727d6649e5f}\label{classBall_a043c2f8e9faee388220c1727d6649e5f}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{a,  }\item[{double}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ x coordinate of ball \\
+\hline
+{\em y} & -\/ y coordinate of ball \\
+\hline
+{\em a} & -\/ angle of ball direction \\
+\hline
+{\em s} & -\/ speed of ball \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBall_a92c4092cea5986939c1869d04aec17c0}\label{classBall_a92c4092cea5986939c1869d04aec17c0}} 
+\index{Ball@{Ball}!Collide@{Collide}}
+\index{Collide@{Collide}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Collide()}{Collide()}}
+{\footnotesize\ttfamily void Ball\+::\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$}]{game\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The method that is called when objects collide $>$ 
+
+Reimplemented from \mbox{\hyperlink{classPoint_a34be17aa6816e862ded30e20d667d41c}{Point}}.
+
+\mbox{\Hypertarget{classBall_a2460e36b33c48f8aea8763ca11a349c9}\label{classBall_a2460e36b33c48f8aea8763ca11a349c9}} 
+\index{Ball@{Ball}!nextPos@{nextPos}}
+\index{nextPos@{nextPos}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{nextPos()}{nextPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} Ball\+::next\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+current position By default point doesn\textquotesingle{}t move 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classPoint_aab1624043706e4adde965f592a743179}{Point}}.
+
+\mbox{\Hypertarget{classBall_adfc2ff4ecf394ff5538bbfdd4e6d7630}\label{classBall_adfc2ff4ecf394ff5538bbfdd4e6d7630}} 
+\index{Ball@{Ball}!show@{show}}
+\index{show@{show}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Ball\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classViewField}{View\+Field}} \&}]{field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Method which implements the graphical representation of the object $>$ 
+
+Reimplemented from \mbox{\hyperlink{classPoint_a2153c5a0b5b98dea6697bdf53230ea33}{Point}}.
+
+\mbox{\Hypertarget{classBall_ac4af3359378f4671dc2d18a7817ef6a0}\label{classBall_ac4af3359378f4671dc2d18a7817ef6a0}} 
+\index{Ball@{Ball}!Update@{Update}}
+\index{Update@{Update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ball\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGameObject}{Game\+Object}} $\ast$}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update state of game object and map $>$ 
+
+Reimplemented from \mbox{\hyperlink{classPoint_a9819efce1065ddbc01785ce9afb975cc}{Point}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Ball.\+h\item 
+Ball.\+cpp\end{DoxyCompactItemize}
