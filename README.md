@@ -31,6 +31,8 @@ More in Doxygen Documentation
     
 ## Installation
 The program is run from the command line.
+One parametr is required - path to the level.
+(cmake-build-debug contains simple.level)
 
 ## Authors and acknowledgment
 @azizoram 2023 
